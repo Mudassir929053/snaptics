@@ -1,0 +1,314 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+}
+/* Default link color */
+.navbar-light .navbar-nav .nav-link,
+.navbar-text a {
+    color: #000000 !important;
+    padding: 0px 15px 0px 15px !important;
+    /* font-weight: bold; */
+}
+
+/* Hover effect */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-text a:hover {
+    color: #a6cf45 !important; /* green */
+}
+
+/* Active (clicked) link color */
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-text a:active {
+    color: #a6cf45 !important; /* green */
+}
+
+.sec1 {
+    background-image: url(../images/main.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.main-background-overlay {
+    background-color: #000000;
+    opacity: 0.61;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    /* Initial height, adjust as needed */
+    width: 100%;
+    position: absolute;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .main-background-overlay {
+        height: 100%;
+        /* Adjust the height for smaller screens */
+    }
+}.contactimg {
+    position: relative;
+    background-image: url(../images/Brookfield-Villas.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-overlay {
+    background-color: #000000;
+    opacity: 0.61;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    top: 0;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .background-overlay {
+        height: 100%; /* Adjust the height for smaller screens */
+    }
+}
+
+
+.widget {
+    background-color: #E6E6E61A;
+    border-style: solid;
+    border-radius: 64px 64px 64px 64px;
+    border-width: 1px 1px 1px 1px;
+    border-color: #CFAC6C;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    /* Ensures that the text content is hidden while it's being animated */
+    border-right: .15em solid orange;
+    /* The cursor */
+    white-space: nowrap;
+    /* Keeps the text in one line */
+    animation: typing 5.5s steps(30, end) infinite, blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 75%
+    }
+}
+
+/* The cursor blink effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+
+.list-item-icon {
+    margin-right: 10px;
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    border: 2px solid green; /* Green border */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: light background color */
+    width: 90%;
+    margin-top: -28px; /* Move form up */
+    margin-left: 25px; /* Move form right */
+}
+.form-label .required {
+    color: red;
+    font-weight: 600;
+    font-size:larger;
+
+}
+.form-label {
+    color:#000000;
+    font-weight: 600;
+}
+
+
+.form-container1 {
+    padding: 20px;
+    width: 100%;
+}
+.form-label1 .required {
+    color: red;
+    font-weight: 600;
+    font-size:larger;
+
+}
+.form-label1 {
+    color:#000000;
+    font-weight: 600;
+}
+.hover-border {
+    background-color: #e6d5b4;
+    border-radius: 26% 0% 26% 0%;
+    padding: 10px;
+    transition: border-bottom 0.2s ease;
+}
+.hover-border:hover {
+    border-bottom: solid #a6cf45 5px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #a6cf45;
+    color: white;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.project-section-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-section-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/download-3.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+#project-section {
+    position: relative;
+    z-index: 2;
+}
+
+.large-screen-only {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .large-screen-only {
+        display: inline;
+    }
+}
+
+.Location-highlight-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.Location-highlight-bg::before {
+    content: ''; /* Ensure this is not commented out */
+    position: absolute; /* Position it absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg_frame3.png');
+    /* background-size:cover; */
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.2; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure it is behind other content */
+}
+
+
+
+.local {
+    border: solid #e3ece7 2px;
+    padding: 10px;
+    transition: border-bottom 0.2s ease;
+    width: 400px;
+}
+.local:hover {
+    background-color: #e3ece7;
+
+}
+
+.zoom-effect {
+    transition: transform 0.5s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.2);
+}
+
+.responsive-map {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 4:3 aspect ratio (height/width) */
+}
+
+.responsive-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    /* Ensure it's above other elements */
+}
+
+.scrollToTopBtn i {
+    font-size: 24px;
+}
+
+.footer {
+    background-color: #d1ac6e;
+    color: white;
+}
+
+.footer ul li a {
+    color: aliceblue;
+}
+
+.footer h5 {
+    font-weight: bolder;
+}
+
+.footer li {
+    font-weight: 600;
+
+}
