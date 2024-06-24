@@ -7,9 +7,9 @@ body {
     color: #000000 !important;
     padding: 0px 15px 0px 15px !important;
     /* font-weight: bold; */
-}
+} 
 
-/* Hover effect */
+/* Hover effects */
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-text a:hover {
     color: #a6cf45 !important; /* green */
